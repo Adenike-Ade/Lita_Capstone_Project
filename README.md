@@ -1,4 +1,4 @@
-# lita_capstone_project
+# Lita_Capstone_Project
 DOCUMENTAION FOR MY CAPSTONE PROJECT WHIT LITA DATA ANALYSIS CLASS
 
 ### Project title: Salesdata analysis 

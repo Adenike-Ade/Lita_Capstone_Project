@@ -46,3 +46,73 @@ In EDA, the Data was explored to answer to answer some questions such as
 ### Data Analysis 
 ---
 This is where excel functions, SQL queries and as well as lines of Codes used during the salesdata analysis are displayed.
+
+```EXCEL
+=AVERAGEIF(SalesData!C:C,SalesData!C2,SalesData!H:H)
+
+=SUMIF(SalesData!D:D,SalesData!D3,SalesData!H:H)
+```
+```SQL
+SELECT * FROM [dbo].[Capstone project lita]
+
+TOTAL SALES 
+
+SELECT SUM(SALES) AS TOTALSALES
+FROM [dbo].[Capstone project lita];
+
+Total sales for each product
+
+SELECT PRODUCT, SUM(SALES) AS totalsales
+from [dbo].[Capstone project lita]
+group by Product;
+
+Number of sales transaction in each region
+
+SELECT region, count(SALES) AS salestransaction
+from [dbo].[Capstone project lita]
+group by region;
+
+Highest selling product by total sales value
+
+select top 1 product, sum(sales) as totalsales
+from [dbo].[Capstone project lita]
+group by Product;
+
+Total revenue per product
+
+select product, sum(sales) as totalrevenue
+from [dbo].[Capstone project lita]
+group by Product;
+
+Monthly sales total for the current year
+
+select DATENAME(MONTH,OrderDate) as month,
+sum(sales) as monthlysales
+from [dbo].[Capstone project lita]
+where year(orderdate) = year(getdate())
+group by DATENAME(MONTH,orderdate);
+
+Top 5 customers by total purchase amount
+
+select top 5 Customer_Id,
+SUM(sales) AS TOTALPURCHASE
+FROM[dbo].[Capstone project lita]
+group by Customer_Id
+ORDER BY TOTALPURCHASE DESC;
+
+Percentage of total sales contributed by each region
+
+Select region,
+SUM(sales)/(select sum(sales) FROM[dbo].[Capstone project lita])* 100 as SALESPERCENTAGE
+FROM [dbo].[Capstone project lita]
+GROUP BY Region;
+
+Product with no sales in the last quarter
+
+select PRODUCT
+from[dbo].[Capstone project lita]
+where Product not in (
+select product from [dbo].[Capstone project lita]
+where OrderDate >= DATEADD(q,-1, GETDATE())
+);
+```

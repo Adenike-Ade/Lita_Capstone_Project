@@ -1,5 +1,5 @@
 # Lita_Capstone_Project
-DOCUMENTAION FOR MY CAPSTONE PROJECT WHIT LITA DATA ANALYSIS CLASS
+DOCUMENTAION FOR MY CAPSTONE PROJECT WITH LITA DATA ANALYSIS CLASS
 
 ### Project title: Salesdata analysis 
 
@@ -28,7 +28,7 @@ The initial phase of this project cleaning, the following actions were taken
 ### Exploring Data Analysis 
 ---
 In EDA, the Data was explored to answer to answer some questions such as 
-1. Using Excel to
+1. Using Excel to:
 - summarizing total sales by product, region, and month using pivot tables.
 - Use Excel formulas to calculate metrics such as average sales per product and total revenue by region.
 - Creating other interesting report using pivot tables and charts.

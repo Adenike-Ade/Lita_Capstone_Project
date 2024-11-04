@@ -9,3 +9,8 @@ This project aims to analyze sales data to extract valuable insights, identify t
 ### Data Source
 The data source is a Salesdata obtained from the Lita data class instructors/facilitator.
 
+### Tools Used
+- Microsoft Excel for Data Cleaning, Analysis and visualization.
+- SQL (Structured Query Language) for Querying of Data
+- Power Business Intelligence (Power BI) for Data cleaning, Analysis and Creation of Visuals
+- GitHub for portfolio building 

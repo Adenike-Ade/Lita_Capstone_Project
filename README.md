@@ -120,3 +120,5 @@ where OrderDate >= DATEADD(q,-1, GETDATE())
 
 ![1748852286041175972358853900739](https://github.com/user-attachments/assets/d5c36cc0-99fa-4e25-adaa-5376ded58b14)
 
+![17488524331421441144956794959910](https://github.com/user-attachments/assets/3a3fe078-570f-4574-91d0-20ca270e0429)
+

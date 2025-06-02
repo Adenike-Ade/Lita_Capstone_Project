@@ -116,3 +116,4 @@ select product from [dbo].[Capstone project lita]
 where OrderDate >= DATEADD(q,-1, GETDATE())
 );
 ```
+![1748852122668871515223071254349](https://github.com/user-attachments/assets/cc50ee44-8b8b-49f2-ae88-69dcd7fb1428)
